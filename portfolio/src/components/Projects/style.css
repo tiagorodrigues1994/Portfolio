@@ -1,0 +1,37 @@
+#projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+
+}
+#projects p, h1{
+ padding: 1rem 0rem;
+}
+
+#projects h1 {
+ font-size: 2rem;
+}
+
+.box-projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.img-next{
+    display: none;
+}
+
+@media screen and (min-width:1290px) {
+    .img-next{
+        display: block;
+       height: 2rem;
+        position: absolute;
+        right: -7rem;
+        cursor: pointer;
+      
+    }
+}
+
+
+

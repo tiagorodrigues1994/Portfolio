@@ -1,0 +1,78 @@
+#aboutMe{
+    position: relative;
+    text-align: center;
+    padding: 18rem 0rem;
+}
+
+#aboutMe h1{
+    font-size: 3rem ;
+    margin: 2rem 0rem;
+}
+
+#aboutMe figure img{
+ width: 400px;
+    border-radius: 2rem;
+}
+
+.box-aboutMe{
+    display: flex;
+    justify-content: space-around;
+    gap:2.4rem;  
+}
+
+.box-cards01 img{
+    width: 32px;
+}
+
+.box-cards01{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0rem;
+}
+
+.box-cards01 div{
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 0rem 0.8rem;
+    flex: 1;
+}
+
+.box-info p{
+    padding: 0.6rem;
+}
+.img-next{
+    display: none;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .box-cards01{
+        flex-direction: column;
+    }
+
+    .box-cards01 div, p{
+        margin: 20px;
+    }
+
+    #aboutMe figure img{
+        height: 48vw;
+        width:auto;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #aboutMe figure img{
+        margin: 4rem 0rem;
+    }
+
+    .box-aboutMe{
+        flex-direction: column;
+    }
+    
+    #aboutMe h1{
+        font-size: 2rem;
+    }
+}
+

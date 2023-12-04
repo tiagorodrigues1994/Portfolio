@@ -1,0 +1,92 @@
+.box-skills img{
+    width: 32px;
+    object-fit: contain;
+}
+
+#experience{
+    text-align: center;
+    position: relative;
+    padding: 18rem 0rem;
+}
+
+#experience h1{
+    font-size:3rem;
+}
+
+.box-experience{
+flex: 1;
+border-radius: 2rem;
+border:1px solid rgb(163, 163, 163);
+}
+
+.box-experience h2{
+  
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-top: 2rem;
+}
+
+.list-skills{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+gap: 1rem;
+justify-content: space-around;
+}
+
+.box-skills{
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 10rem;
+gap: 1rem;
+margin: 1rem;
+}
+
+.box-skills div p{
+    padding: 0.5rem;
+}
+
+.box-pai{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem ;
+}
+.img-next{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .box-pai{
+       
+        flex-direction: column;
+    }
+
+    .box-skills{
+        width: 13rem;
+    }
+}
+
+
+@media screen and (min-width:1290px) {
+    .img-next{
+        display: block;
+        width: 50px;
+       height: 2rem;
+        position: absolute;
+        right:-7rem;
+        cursor: pointer;
+        animation: arrowAnimation 1s ease-in-out alternate infinite ;
+    }
+    @keyframes arrowAnimation {
+       
+        to{
+            transform: translateY(20px);
+        }
+      }
+}

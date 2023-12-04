@@ -1,0 +1,105 @@
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20vh;
+    
+  }
+  
+  .nav_item{
+    list-style: none;
+  }
+  
+   .nav_item a{
+    text-decoration: none;
+    color: #000;
+    transition: all 300ms ease;
+    font-size: 1.5rem;
+  }
+   
+  .nav_item a:hover {
+    color: rgb(85, 85, 85);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(156, 155, 155); 
+  }
+  
+  
+  .brand{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  .nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+  
+  .nav_toggler div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.3rem;
+    transition: 0.4s ease-in;
+    background-color: #000;
+  }
+  
+  .nav_toggler{
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media screen and (max-width:1200px) {
+ 
+    .nav_toggler{
+      display:block;
+      position: fixed;
+      right: 1.5rem;
+    }
+  
+    .nav_menu{
+      position: fixed;
+      top: 16vh;
+      right: 0;
+      width: 40%;
+      height: 30vh;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: 0.3s ease-in;
+      gap: 1rem;
+    }
+  
+  }
+  
+  .nav_active{
+    transform: translateX(0%);
+  }
+  
+  .toggle .line1{
+  transform: rotate(-45deg) translate(-4px, 5px);
+  }
+  
+  .toggle .line2{
+   opacity: 0;
+  }
+  
+  .toggle .line3{
+    transform: rotate(45deg) translate(-4px, -5px);
+  }
+  
+  @media screen and (max-width:600px) {
+    .brand{
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  
+    .nav_toggler div{
+      width: 2rem;
+    
+    }
+   
+  }
+  
+  

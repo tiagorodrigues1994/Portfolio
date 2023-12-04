@@ -1,0 +1,158 @@
+
+#container-mySelf{
+  position: relative;
+  padding: 16rem 0rem;
+}
+.mySelf figure img{
+    width: 400px;
+    }
+    
+    .mySelf{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        gap:5rem;
+        text-align: center;
+    }
+    
+    .icon{
+      
+       width: 30px;
+    }
+    .hello-link{
+     
+     margin: 1rem;
+    }
+    
+    figcaption{
+       display: flex;
+       flex-direction: column;
+       gap: .5rem;
+    }
+    
+    figcaption p:first-child{
+        font-size: 0.8rem;
+        font-weight: bold;
+        color:rgb(85, 85, 85);
+    }
+    
+    figcaption h1{
+        font-size: 2rem;
+       
+    }
+    
+    figcaption p:nth-child(3){
+        font-weight: bold;
+       font-size: 1.2rem;
+       color: rgb(85, 85, 85);
+    }
+    
+    .btn-01, .btn-02{
+        border-radius: 2rem; 
+        border: none;
+        margin: 1rem;
+    }
+    
+      .btn-01 a, .btn-02 a{
+          display: inline-block;
+          font-weight: 600;
+          padding: 0.8rem;
+          text-decoration: none;
+          font-size: 16px;
+          border: 2px solid black;
+          border-radius: 2rem;
+          transition: all 0.3s ease;
+           
+      }
+    
+      .btn-01 a{
+        color: #000; 
+        background-color: #fff;
+      }
+    
+      .btn-02{
+        color: #fff;
+        background-color: #000;
+      }
+    
+      .btn-02  a{
+        text-decoration: none;
+        color: #fff;
+      }
+      
+      .btn-02  a:hover{
+        color: #000;
+      }
+     
+      .btn-01 a:hover{
+        background-color:#000 ; 
+        color: #fff; 
+        text-decoration: none;
+      }
+    
+      .btn-01:active {
+        background-color: #fff;
+        transform: scale(0.8);
+        transition: .6s;
+      }
+    
+      .btn-02:hover{
+        background-color:#fff; 
+        color: #000; 
+        text-decoration: none;
+      }
+    
+      .btn-02:active {
+        background-color: #fff;
+        transform: scale(0.8);
+        transition: .6s;
+      }
+      .img-next{
+        display: none;
+      }
+    
+    
+      @media screen and (max-width:600px) {
+        .btn-01 a, .btn-02{
+          padding:0.5rem 0.3rem;
+        }
+    
+        .btn-01, .btn-02{
+          margin: 16px 6px;
+        }
+    
+        figcaption h1{
+          font-size: 1.5rem;
+        }
+    
+        figcaption p:nth-child(3) {
+          font-size: 1.5rem;
+        }
+    
+        .mySelf figure img{
+          width: auto;
+          height: 48vw;
+          } 
+      }
+    
+    
+      @media screen and (max-width:1200px) {
+        .mySelf{
+          display:flex;
+          flex-direction: column;
+          padding: 50px;
+        }
+      }
+
+    
+    
+      @media screen and (min-width:1290px) {
+        .img-next{
+            display: block;
+           height: 2rem;
+            position: absolute;
+            right:-7rem;
+            cursor: pointer;
+          
+        }
+    }
